@@ -13,13 +13,13 @@ const routes = (
   </Route>
 )
 
-const router = ReactRouter.create({
-  routes: routes,
-  location: ReactRouter.HistoryLocation
-});
+// const router = ReactRouter.create({
+//   routes: routes,
+//   location: ReactRouter.HistoryLocation
+// });
 
 Meteor.startup(function () {
-  router.run(function (Handler, state) {
+  ReactRouter.run(routes, ReactRouter.HistoryLocation, function (Handler, state) {
     React.render(<Handler/>, document.getElementById("app"));
   });
 });

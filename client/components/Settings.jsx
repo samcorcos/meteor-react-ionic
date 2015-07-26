@@ -7,8 +7,8 @@ Settings = React.createClass({
   },
   render() {
     return (
-      <div className="ion-item">
-        <h1>test</h1>
+      <div className="list">
+        <h1 className="item">test</h1>
       </div>
     )
   }
