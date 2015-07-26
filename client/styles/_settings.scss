@@ -1,0 +1,12 @@
+.settings-header {
+  height: 40vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  .settings-avatar {
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+  }
+}

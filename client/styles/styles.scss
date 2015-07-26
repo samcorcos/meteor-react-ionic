@@ -2,3 +2,35 @@
 @import '.meteor/local/build/programs/server/assets/packages/meteoric_ionicons-sass/ionicons';
 
 @import 'app-variables';
+@import 'settings';
+
+a.title {
+  text-decoration: none;
+}
+
+.trans-enter {
+  opacity: 0.01;
+}
+
+.trans-enter.trans-enter-active {
+  opacity: 1;
+  transition: opacity .5s ease-in;
+}
+
+.trans-leave {
+  opacity: 1;
+}
+
+.trans-leave.trans-leave-active {
+  opacity: 0.01;
+  transition: opacity .5s ease-in;
+}
+
+.trans-appear {
+  opacity: 0.01;
+  transition: opacity .5s ease-in;
+}
+
+.trans-appear.trans-appear-active {
+  opacity: 1;
+}

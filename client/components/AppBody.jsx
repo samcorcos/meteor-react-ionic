@@ -5,11 +5,13 @@ const {
   RouteHandler
 } = ReactRouter;
 
+let ReactCSSTransitionGroup = React.addons.CSSTransitionGroup;
+
 AppBody = React.createClass({
   mixins: [ReactMeteorData],
   getMeteorData() {
     return {
-      // currentUser: Meteor.user()
+
     }
   },
   render() {
@@ -26,7 +28,9 @@ AppBody = React.createClass({
           <div className="scroll-content ionic-scroll">
             <div className="content overflow-scroll has-header">
 
-              <RouteHandler />
+              <ReactCSSTransitionGroup transitionName="trans">
+                <RouteHandler />
+              </ReactCSSTransitionGroup>
 
             </div>
           </div>
