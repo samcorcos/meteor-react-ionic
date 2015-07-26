@@ -25,17 +25,17 @@ AppBody = React.createClass({
 
           <RouteHandler />
 
-          <div class="tabs tabs-icon-top">
-            <a class="tab-item">
-              <i class="icon ion-home"></i>
+          <div className="tabs tabs-icon-top">
+            <a className="tab-item">
+              <i className="icon ion-home"></i>
               Home
             </a>
-            <a class="tab-item">
-              <i class="icon ion-star"></i>
+            <a className="tab-item">
+              <i className="icon ion-star"></i>
               Favorites
             </a>
-            <a class="tab-item">
-              <i class="icon ion-gear-a"></i>
+            <a className="tab-item">
+              <i className="icon ion-gear-a"></i>
               Settings
             </a>
           </div>
