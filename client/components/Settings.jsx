@@ -6,6 +6,10 @@ Settings = React.createClass({
     }
   },
   render() {
-    return <span>settings page, yo</span>
+    return (
+      <div className="ion-item">
+        <h1>test</h1>
+      </div>
+    )
   }
 })
