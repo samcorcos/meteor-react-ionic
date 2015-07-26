@@ -13,7 +13,6 @@ meteorhacks:npm
 
 
 npm-container
-pauloborges:mapbox
 mdg:camera
 mdg:geolocation
 mdg:reload-on-resume

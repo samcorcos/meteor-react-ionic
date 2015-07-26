@@ -1,4 +1,4 @@
-let Settings = React.createClass({
+Settings = React.createClass({
   mixins: [ReactMeteorData],
   getMeteorData() {
     return {

@@ -5,8 +5,8 @@ const {
 } = ReactRouter;
 
 const routes = (
-  <Route name="app" handler={App} path="/">
-    <Route name="map" path="/map" handler={Map} />
+  <Route name="root" handler={AppBody} path="/">
+    <Route name="other" path="/other" handler={Other} />
     <Route name="settings" path="/settings" handler={Settings} />
     <DefaultRoute handler={AppLoading} />
     <NotFoundRoute handler={AppNotFound} />

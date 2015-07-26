@@ -1,4 +1,4 @@
-let AppNotFound = React.createClass({
+Other = React.createClass({
   mixins: [ReactMeteorData],
   getMeteorData() {
     return {
@@ -6,6 +6,6 @@ let AppNotFound = React.createClass({
     }
   },
   render() {
-    return <span>Not found, dawg</span>
+    return <span>Map me, bro</span>
   }
 })

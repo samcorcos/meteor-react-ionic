@@ -1,4 +1,4 @@
-let AppLoading = React.createClass({
+AppLoading = React.createClass({
   mixins: [ReactMeteorData],
   getMeteorData() {
     return {
