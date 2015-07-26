@@ -14,30 +14,21 @@ AppBody = React.createClass({
   },
   render() {
     return (
-      <div className="view">
-        <div className="scroll-content ionic-scroll">
+      <div className="ionic-body">
 
-          <div className="bar bar-header bar-light">
-            <Link className="button button-icon icon ion-gear-a" to={`/settings`}></Link>
-            <Link className="h1 title" to={'/'}>App Name</Link>
-            <Link className="button button-icon icon ion-heart" to={'/other'}></Link>
-          </div>
+        <div className="bar bar-header bar-light">
+          <Link className="button button-icon icon ion-gear-a" to={`/settings`}></Link>
+          <Link className="h1 title" to={'/'}>App Name</Link>
+          <Link className="button button-icon icon ion-heart" to={'/other'}></Link>
+        </div>
 
-          <RouteHandler />
+        <div className="view">
+          <div className="scroll-content ionic-scroll">
+            <div className="content overflow-scroll has-header">
 
-          <div className="tabs tabs-icon-top">
-            <a className="tab-item">
-              <i className="icon ion-home"></i>
-              Home
-            </a>
-            <a className="tab-item">
-              <i className="icon ion-star"></i>
-              Favorites
-            </a>
-            <a className="tab-item">
-              <i className="icon ion-gear-a"></i>
-              Settings
-            </a>
+              <RouteHandler />
+
+            </div>
           </div>
 
         </div>
@@ -46,3 +37,19 @@ AppBody = React.createClass({
     )
   }
 })
+
+// // Use this if you want tabs // //
+// <div className="tabs tabs-icon-top">
+//   <a className="tab-item">
+//     <i className="icon ion-home"></i>
+//     Home
+//   </a>
+//   <a className="tab-item">
+//     <i className="icon ion-star"></i>
+//     Favorites
+//   </a>
+//   <a className="tab-item">
+//     <i className="icon ion-gear-a"></i>
+//     Settings
+//   </a>
+// </div>
