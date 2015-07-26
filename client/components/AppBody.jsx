@@ -15,6 +15,8 @@ AppBody = React.createClass({
     }
   },
   render() {
+    let name = window.location.pathname;
+
     return (
       <div className="ionic-body">
 
@@ -28,8 +30,8 @@ AppBody = React.createClass({
           <div className="scroll-content ionic-scroll">
             <div className="content overflow-scroll has-header">
 
-              <ReactCSSTransitionGroup transitionName="trans">
-                <RouteHandler />
+              <ReactCSSTransitionGroup transitionName="page-transition" component="div">
+                <RouteHandler key={name} />
               </ReactCSSTransitionGroup>
 
             </div>
