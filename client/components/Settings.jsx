@@ -10,12 +10,17 @@ Settings = React.createClass({
       currentUser: Meteor.user()
     }
   },
+  getInitialState() {
+    return {
+      image: "http://placekitten.com/g/200/300"
+    }
+  },
   render() {
 
     return (
       <div>
         <div className="settings-header">
-          <div className="settings-avatar"></div>
+          <img className="settings-avatar" src={this.state.image}></img>
         </div>
         <div>
           <p><input type="button" className="capture" value="Take Photo" onClick={this.takePicture()} /></p>
