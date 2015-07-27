@@ -5,7 +5,19 @@ Other = React.createClass({
 
     }
   },
+  getInitialState() {
+    return {
+      likes: ["Bob", "John","Tom","Jerry"]
+    }
+  },
   render() {
-    return <span>Map me, bro</span>
+    let list = this.state.likes.map(function(name) {
+      return (<div className="item">{name}</div>)
+    })
+    return (
+      <div className="list">
+        {list}
+      </div>
+    )
   }
 })
